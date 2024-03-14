@@ -1,0 +1,122 @@
+body 
+{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: conic-gradient(from 45deg, #73675a1a, #F2DCE4, #73675a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-aplicativo 
+{
+    width: 70%;
+    max-width: 600px;
+    height: 80vh;
+    max-height: 600px;
+    background-color: #f0f0f0;    
+    box-shadow: 
+    0px 4px 4px rgba(167, 171, 194, 0.1),    
+    0px 188px 52px rgba(167, 171, 194, 0.01),
+    0px 120px 48px rgba(0, 0, 0, 0.05), 
+    0px 68px 41px rgba(167, 171, 194, 0.15),
+    0px 30px 30px rgba(122, 129, 164, 0.26),
+    0px 8px 17px rgba(209, 211, 222, 0.29),
+    inset 0px 6px 8px rgba(255, 255, 255, 0.1),
+    inset 0px -2px 5px rgba(122, 129, 164, 0.20);
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+img 
+{
+    width: 75%;
+    max-width: 200px; 
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+    margin-top: 0.5em; 
+}
+
+#informacoes
+{
+    margin: 3.5em;
+    height: 100%;
+}
+
+#informacoes-faixa
+{
+    padding: 1em;
+}
+
+#capitulo 
+{
+    font-size: 1.8em;
+    font-weight: 500;
+    text-transform: uppercase;    
+    color: #733042;
+    margin: 0px;
+}
+
+#nome-autor 
+{    
+    color: #73675A;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 1.1em;
+}
+
+#audio-capitulo 
+{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#container-botoes 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 1em;
+
+}
+
+button 
+{
+    font-size: 2.5em;    
+    color: #F26B5E;
+    border: none;    
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#anterior, #proximo
+{
+    font-size: 2.1em;  
+}
+
+button:hover 
+{
+    color: #F2785C;
+    transform: scale(1.05);
+}
+
+button:active 
+{
+    transform: scale(0.95);
+}
+
+@media (max-width: 532px)
+{
+    .container-aplicativo 
+    {
+        max-height: 570px;
+    }
+    
+}
+
